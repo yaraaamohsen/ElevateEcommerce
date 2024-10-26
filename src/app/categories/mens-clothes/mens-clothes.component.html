@@ -1,0 +1,10 @@
+<div class="py-24">
+    <h2 class="text-5xl text-center font-bold pb-6">MEN'S CLOTHES</h2>
+    <div class="myContainer flex flex-wrap items-center h-full">
+        @for (product of prodArr; track $index) {
+            <div class="w-full md:w-1/4">
+                <app-one-product [product] = "product"></app-one-product>
+            </div>
+        }
+    </div>
+</div>
